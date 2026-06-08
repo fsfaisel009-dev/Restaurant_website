@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodly - Modern Restaurant & Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Foodly</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#reservation" class="nav-link">Reservation</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Sign Up Button -->
+            <button class="btn-signup">Sign Up</button>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <!-- Hero Content (Left) -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">⭐</span>
+                    <span>Welcome to Foodly</span>
+                </div>
+                <h1 class="hero-title">Delicious Food Delivered to Your Door</h1>
+                <p class="hero-description">
+                    Experience premium quality food with fresh ingredients, authentic recipes, and exceptional service. Order now and enjoy a culinary delight.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Order Now</button>
+                    <button class="btn btn-secondary">Watch Demo</button>
+                </div>
+            </div>
+
+            <!-- Hero Image (Right) -->
+            <div class="hero-image">
+                <div class="hero-circle">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=500&fit=crop" alt="Healthy Food Bowl" class="food-image">
+                </div>
+                <!-- Decorative Shapes -->
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORIES SECTION ==================== -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🍕</div>
+                    <span class="category-name">Pizza</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <span class="category-name">Burgers</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">☕</div>
+                    <span class="category-name">Coffee</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥗</div>
+                    <span class="category-name">Salads</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥤</div>
+                    <span class="category-name">Drinks</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED MENU SECTION ==================== -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Menu</h2>
+                <p class="section-subtitle">Handpicked items from our kitchen</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Menu Card 1 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop&auto=format&q=80" alt="Margherita Pizza">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Margherita Pizza</h3>
+                        <p class="menu-card-description">Fresh mozzarella, tomato sauce, and basil on crispy dough</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$12.99</span>
+                            <button class="btn-order">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 2 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Classic Burger">
+                        <span class="card-badge">Best Seller</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Classic Burger</h3>
+                        <p class="menu-card-description">Juicy beef patty with cheese, lettuce, and special sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$10.99</span>
+                            <button class="btn-order">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 3 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Caesar Salad">
+                        <span class="card-badge">New</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Caesar Salad</h3>
+                        <p class="menu-card-description">Crisp romaine lettuce with parmesan and croutons</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$8.99</span>
+                            <button class="btn-order">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 4 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="Espresso Coffee">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Espresso Coffee</h3>
+                        <p class="menu-card-description">Rich, aromatic espresso shot with silky crema</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$4.99</span>
+                            <button class="btn-order">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 5 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop&auto=format&q=80" alt="Buddha Bowl">
+                        <span class="card-badge">Healthy</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Buddha Bowl</h3>
+                        <p class="menu-card-description">Nutritious mix of grains, vegetables, and protein</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$11.99</span>
+                            <button class="btn-order">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 6 -->
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop&auto=format&q=80" alt="Fresh Juice">
+                        <span class="card-badge">Refreshing</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Fresh Juice</h3>
+                        <p class="menu-card-description">Cold-pressed fresh orange juice with natural ingredients</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$5.99</span>
+                            <button class="btn-order">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <!-- About Image -->
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=600&fit=crop" alt="Fresh Food Ingredients">
+                </div>
+
+                <!-- About Content -->
+                <div class="about-content">
+                    <h2 class="section-title">Why Choose Foodly?</h2>
+                    <p class="about-description">
+                        We believe that great food starts with quality ingredients and passionate preparation. Every dish is crafted with care to bring you the best dining experience.
+                    </p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🥬</div>
+                            <div class="feature-text">
+                                <h4>Fresh Ingredients</h4>
+                                <p>Sourced daily from local suppliers</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">👨‍🍳</div>
+                            <div class="feature-text">
+                                <h4>Authentic Taste</h4>
+                                <p>Traditional recipes with modern twist</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">🚀</div>
+                            <div class="feature-text">
+                                <h4>Fast Delivery</h4>
+                                <p>Hot and fresh within 30 minutes</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">⭐</div>
+                            <div class="feature-text">
+                                <h4>Quality Service</h4>
+                                <p>Dedicated customer support 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESERVATION SECTION ==================== -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-card">
+                <div class="reservation-header">
+                    <h2 class="section-title">Reserve Your Table</h2>
+                    <p class="section-subtitle">Book your seat for an unforgettable dining experience</p>
+                </div>
+
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6+">6+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="occasion">Occasion (Optional)</label>
+                            <input type="text" id="occasion" name="occasion" placeholder="Birthday, Anniversary...">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real reviews from real customers</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"The food quality is exceptional! Every bite is perfect, and the delivery was incredibly fast. Highly recommend Foodly!"</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>Verified Customer</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Best restaurant experience online! The menu variety is amazing and the customer service team is super helpful and responsive."</p>
+                    <div class="testimonial-author">
+                        <h4>Michael Chen</h4>
+                        <p>Verified Customer</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"I order from Foodly at least twice a week. The consistency, quality, and taste are unmatched. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <h4>Emma Davis</h4>
+                        <p>Verified Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h3>Contact Information</h3>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">📍</div>
+                        <div class="contact-info-text">
+                            <h4>Address</h4>
+                            <p>123 Food Street<br>Culinary City, CC 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">📞</div>
+                        <div class="contact-info-text">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">✉️</div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <p>hello@foodly.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">🕐</div>
+                        <div class="contact-info-text">
+                            <h4>Hours</h4>
+                            <p>Mon - Fri: 10 AM - 11 PM<br>Sat - Sun: 9 AM - 12 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">𝕏</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span>Foodly</span>
+                    </div>
+                    <p>Bringing delicious food to your doorstep since 2024.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Foodly Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
